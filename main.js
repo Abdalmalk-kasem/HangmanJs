@@ -13,7 +13,7 @@ lettersArray.forEach((letter) => {
   lettersContainer.appendChild(span);
 });
 
-fetch("/words.json")
+fetch("words.json")
   .then((response) => response.json())
   .then((data) => {
     const words = data;
